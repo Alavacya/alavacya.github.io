@@ -25,16 +25,16 @@
 	<div class="container">
 		<div class="nav__wrap">
 			<div class="nav__wrap__left">
-				<div class="nav__wrap__left__menu">
-					<div class="nav__wrap__left__menu__up menuas">
-						Menu
+				<div class="nav__wrap__left__menu menuas">
+					<div class="nav__wrap__left__menu__up">
+
 					</div>
 					<div class="nav__wrap__left__menu__down">
 						<div class="nav__wrap__left__menu__down__line"></div>
 						<div class="nav__wrap__left__menu__down__line"></div>
 					</div>
 				</div>
-				<div class="nav__wrap__left__social">
+				<div class="nav__wrap__left__social acc">
 					<ul class='social__wrap'>
 						<li>
 							<a href="#" target='_blank'>
@@ -85,9 +85,9 @@
 				</a>
 			</div>
 			<div class="nav__wrap__left nav__wrap__right">
-				<div class="nav__wrap__left__menu">
+				<div class="nav__wrap__left__menu acc">
 					<div class="nav__wrap__left__menu__up">
-						Menu
+
 					</div>
 					<div class="nav__wrap__left__menu__down">
 						<div class="nav__wrap__left__menu__down__line"></div>
@@ -140,6 +140,36 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="container rel">
+			<div class="blur__menu__wrap">
+				<div class="blur__menu">
+					<ul>
+						<li>
+							<a href="/">Hoved</a>
+						</li>
+						<li>
+							<a href="/ideology/">Matideologi</a>
+						</li>
+						<li>
+							<a href="/technologies/">Teknologi</a>
+						</li>
+						<li>
+							<a href="/assortment/">Tilbyd</a>
+						</li>
+						<li>
+							<a href="/about-us/">Selskapets historie</a>
+						</li>
+						<li>
+							<a href="/development/">Bærekraftig utvikling</a>
+						</li>
+						<li>
+							<a href="/contacts/">Kontakt oss</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="nav__under__line">
@@ -150,6 +180,9 @@
 	</div>
 </div>
 
+
+
+<!-- 
 <div class="menu">
 	<div class="menu_r">
 		<img class='close' src="/images/dist/shjdfsdf.svg" alt="close">
@@ -284,66 +317,88 @@
 			</ul>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<div class="contacts-header pt-285">
+<div class="contacts-header">
+	<div class="container__contact">
+		<h1 class="title-big text-center color-accent text-uppercase">
+			KONTAKT OSS
+		</h1>
+	</div>
 	<div class="container">
 		<div class="contacts-header__wrap">
-			<h1 class="title text-center color-accent">
-				KONTAKT OSS
-			</h1>
-			<p class="under__title text-center under__title__desc_d desktop">
-				Har du et&nbsp;spørsmål? Eller vil du komme med en gruppeforespørsel?<br>Vennligst kontakt oss på&nbsp;000 0000
-				00
-				000 eller e-post<br><a href="mailto: info@belbrut.no">info@belbrut.no</a>
-			</p>
-
-			<p class="under__title text-center under__title__mob_m mobile">
-				Har du et&nbsp;spørsmål? Eller vil du komme<br>med en gruppeforespørsel? Vennligst<br>kontakt oss på&nbsp;000
-				0000
-				00
-				000 eller<br>e-post <a href="mailto: info@belbrut.no">info@belbrut.no</a>
-			</p>
-
 			<div class="form__main-wrap">
-				<form action="/mail.php">
-					<div class="form__main">
-						<div class="former">
-							<div class="form__main__up">
-								<div class="form__main__up__left">
-									<label>
-										NAVN<span class='color-accent'>*</span>
-									</label>
-									<input type="text" name="NAVN">
-									<label>
-										E-POST<span class='color-accent'>*</span>
-									</label>
-									<input type="text" name="E-POST">
-								</div>
-
-								<div class="form__main__up__center"></div>
-
-								<div class="form__main__up__right">
-									<label>
-										BEDRIFT<span class='color-accent'>*</span>
-									</label>
-									<input type="text" name="BEDRIFT">
-									<label>
-										TELEFON<span class='color-accent'>*</span>
-									</label>
-									<input type="text" name="TELEFON">
-								</div>
-							</div>
-
-							<label class='textarea'>
-								MELDING<span class='color-accent'>*</span>
-								<textarea name="MELDING"></textarea>
-							</label>
+				<div class="form__main-wrap__left">
+					<div class="form__main-wrap__left__up">
+						<h2 class='title-c'>Detaljer</h2>
+						<div class="form__main-wrap__left__up__under">
+							<h3>
+								Maxbel&Gilann AS<br>
+								Oslo, Norge
+							</h3>
+							<ul>
+								<li>
+									<a href="tel: +4746362829">
+										+47 463 62 829
+									</a>
+								</li>
+								<li>
+									<a href="mailto: info@belbruts.no">
+										info@belbruts.no
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
+					<div class="form__main-wrap__left__down">
+						<div class="form__main-wrap__left__down__wrap">
 
-					<button class='m-btn' type='submit'>SEND INN</button>
-				</form>
+						</div>
+					</div>
+				</div>
+				<div class="form__main-wrap__right">
+					<h2 class='title-c'>Forespørsel</h2>
+					<form action="/mail.php">
+						<div class="form__main">
+							<div class="former">
+								<div class="form__main__up">
+									<div class="form__main__up__left">
+										<label>
+											NAVN<span class='color-accent'>*</span>
+										</label>
+										<input type="text" name="NAVN">
+										<label>
+											E-POST<span class='color-accent'>*</span>
+										</label>
+										<input type="text" name="E-POST">
+									</div>
+
+									<div class="form__main__up__center"></div>
+
+									<div class="form__main__up__right">
+										<label>
+											BEDRIFT<span class='color-accent'>*</span>
+										</label>
+										<input type="text" name="BEDRIFT">
+										<label>
+											TELEFON<span class='color-accent'>*</span>
+										</label>
+										<input type="text" name="TELEFON">
+									</div>
+								</div>
+
+								<label class='textarea'>
+									MELDING<span class='color-accent'>*</span>
+									<textarea name="MELDING"></textarea>
+								</label>
+							</div>
+						</div>
+
+						<button class='m-btn' type='submit'>SEND INN</button>
+					</form>
+				</div>
+			</div>
+			<div class="form__main-wrap">
 			</div>
 		</div>
 	</div>
@@ -512,7 +567,7 @@
 	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
 		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
 
-			<div class="container">
+			<div class="containers">
 				<main class="modal__content main-zapis" id="modal-1-content">
 					<div class="form__main-wrap">
 						<form action="/mail.php">
