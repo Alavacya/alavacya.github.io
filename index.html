@@ -389,16 +389,18 @@
 	} else {
 		setTimeout(() => {
 			document.querySelector('.header__wr').classList.add('op1s')
-		}, 1080)
+		}, 1580)
 	}
 
 	let _1vh = Math.round(window.innerHeight / 100)
 
 	if (window.innerWidth < 110 * _1vh) {
 		setTimeout(() => {
-			document.querySelector('.logo_asd').classList.add('left0')
 			document.querySelector('.header .op1s').classList.add('none')
-		}, 2530)
+		}, 2000)
+		setTimeout(() => {
+			document.querySelector('.logo_asd').classList.add('left0')
+		}, 1630)
 	}
 
 	const li = document.querySelectorAll('.nav__wrap .social__wrap li')
