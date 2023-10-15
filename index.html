@@ -364,7 +364,7 @@
 				Vi organiserer bedriftscatering for hvilket som helst antall personer. Uavhengig av hvor stor bedriften er og
 				hvilken profil den har, vil servicenivået vårt forbli uendret, i&nbsp;tråd med alle moderne standarder.
 			</p>
-			<button data-micromodal-open="modal-contact" class='m-btn linker'>
+			<button data-micromodal-open="modal-contact" class='m-btn linker btnsi'>
 				Kontakt oss for å&nbsp;avtale et&nbsp;møte
 			</button>
 		</div>
@@ -389,7 +389,7 @@
 	} else {
 		setTimeout(() => {
 			document.querySelector('.header__wr').classList.add('op1s')
-		}, 180)
+		}, 1080)
 	}
 
 	let _1vh = Math.round(window.innerHeight / 100)
@@ -397,7 +397,22 @@
 	if (window.innerWidth < 110 * _1vh) {
 		setTimeout(() => {
 			document.querySelector('.logo_asd').classList.add('left0')
+			document.querySelector('.header .op1s').classList.add('none')
 		}, 2530)
+	}
+
+	const li = document.querySelectorAll('.nav__wrap .social__wrap li')
+	const line = document.querySelectorAll('.nav__wrap__left__menu__down div')
+	const underline = document.querySelectorAll('.nav__under__line')
+	const headerWrap = document.querySelectorAll('.header p')
+	const headerButton = document.querySelectorAll('.header button')
+
+	const arrays = [li, line, underline, headerWrap, headerButton]
+
+	for (const array of arrays) {
+		for (const element of array) {
+			element.classList.add('tr')
+		}
 	}
 
 </script>
@@ -822,6 +837,10 @@
 									</label>
 								</div>
 							</div>
+
+							<label class='wrapper_cap__wr'>
+								<div class="wrapper_cap"></div>
+							</label>
 
 							<button class='m-btn' type='submit'>SEND INN</button>
 						</form>
